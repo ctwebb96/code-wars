@@ -1,3 +1,4 @@
+//day 8
 function DNAStrand(dna) {
     let match = []
     let arr = dna.split('')
@@ -17,7 +18,7 @@ function DNAStrand(dna) {
     return match.join('')
 }
 
-///
+///refactored
 
 
 let pairs = { 'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C' };
