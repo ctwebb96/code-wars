@@ -13,3 +13,14 @@ function wave(str) {
 
 //refactor
 
+function wave(str) {
+    let result = []
+
+    str.split("").forEach((char, i) => {
+        if (/[a-z]/.test(char)) {
+            result.push(str.slice(0, i) + char.toUpperCase() + str.slice(i + i));
+        }
+    });
+
+    return result;
+}
